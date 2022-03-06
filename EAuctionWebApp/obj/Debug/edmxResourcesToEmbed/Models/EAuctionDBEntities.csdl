@@ -36,7 +36,7 @@
     <Property Name="BuyerCity" Type="Int32" Nullable="false" />
     <Property Name="BuyerAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="BuyerPincode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="BuyerMoileNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BuyerMobileNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="BidAmount" Type="Int32" Nullable="false" />
     <Property Name="BuyersProductId" Type="Int32" />
   </EntityType>

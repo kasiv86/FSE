@@ -78,8 +78,12 @@ export class SellerComponent implements OnInit {
       Pincode: ['', Validators.compose([Validators.required, Validators.pattern('[0-9]{6}')])]
     });
     this.FillCountryDDL();
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    this.eauctionService.getAllSeller().subscribe(data => {
+      this.dataSource = new MatTableDataSource(data);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+    });
+
   }
 
   isAllSelected() {

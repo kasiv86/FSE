@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\FSE2\Anguler-11-CURD-Application\EAuctionWebApp\EAuctionWebApp\Models\EAuctionModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\FSE3\EAuctionWebApp\EAuctionWebApp\Models\EAuctionDBEntities.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

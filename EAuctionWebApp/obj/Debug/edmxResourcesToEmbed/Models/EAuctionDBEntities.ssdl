@@ -36,7 +36,7 @@
     <Property Name="BuyerCity" Type="int" Nullable="false" />
     <Property Name="BuyerAddress" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="BuyerPincode" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="BuyerMoileNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="BuyerMobileNo" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="BidAmount" Type="int" Nullable="false" />
     <Property Name="BuyersProductId" Type="int" />
   </EntityType>

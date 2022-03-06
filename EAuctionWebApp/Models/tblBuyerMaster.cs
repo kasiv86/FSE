@@ -22,7 +22,7 @@ namespace EAuctionWebApp.Models
         public int BuyerCity { get; set; }
         public string BuyerAddress { get; set; }
         public string BuyerPincode { get; set; }
-        public string BuyerMoileNo { get; set; }
+        public string BuyerMobileNo { get; set; }
         public int BidAmount { get; set; }
         public Nullable<int> BuyersProductId { get; set; }
     }

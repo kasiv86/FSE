@@ -13,7 +13,7 @@
               <td class="tbl1">
                 <mat-form-field>
                   <mat-label>Product</mat-label>
-                  <mat-select formControlName="ProductID" (selectionChange)="FillProductIDDDL()" matTooltip="Choose your own product" autocomplete="off">
+                  <mat-select formControlName="ProductID" (selectionChange)="loadProduct($event)" matTooltip="Choose your own product" autocomplete="off">
                     <mat-option *ngFor="let product of (allProducts | async)" [value]="product.ProductId">
                       {{product.ProductId}}
                     </mat-option>
@@ -69,10 +69,23 @@
                       <mat-datepicker #picker></mat-datepicker>
                     </mat-form-field>
                   </td>
-                  </tr>  
+                  </tr> 
+                  <tr>
+                    <td class="content-center">
+                      <button type="submit" mat-raised-button color="accent" matTooltip="Submit" >SellersArea</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <button type="reset" mat-raised-button color="accent" matTooltip="Reset" >BuyersArea</button>
+                    </td>
+                    <td>
+                      <p *ngIf="dataSaved" style="color:rgb(0, 128, 0);font-size:20px;font-weight:bold" Class="success" align="left">
+                        {{massage}}
+                      </p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr> 
             </table>
             <br><br>
-            <!-- <div>
+            <div>
               <mat-table  [dataSource]="dataSource" matSort class="mat-elevation-z8" style="box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);">
                 <ng-container matColumnDef="BidAmount">
                   <mat-header-cell  *matHeaderCellDef mat-sort-header> Bid Amount </mat-header-cell>
@@ -80,21 +93,21 @@
                 </ng-container>  
                 <ng-container matColumnDef="BuyerFirstName">
                   <mat-header-cell  *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-                  <mat-cell  *matCellDef="let buyer"> {{buyer.FirstName}} </mat-cell>
+                  <mat-cell  *matCellDef="let buyer"> {{buyer.BuyerFirstName}} </mat-cell>
                 </ng-container>
                 <ng-container matColumnDef="BuyerEmailId">
                   <mat-header-cell  *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
-                  <mat-cell   *matCellDef="let buyer"> {{buyer.EmailId}}        </mat-cell>
-                </ng-container>              
-                <ng-container matColumnDef="BuyerMobile">
+                  <mat-cell   *matCellDef="let buyer"> {{buyer.BuyerEmailId}}        </mat-cell>
+                </ng-container>      
+                <ng-container matColumnDef="BuyerMobileNo">
                   <mat-header-cell  *matHeaderCellDef mat-sort-header> Mobile </mat-header-cell>
-                  <mat-cell  *matCellDef="let buyer"> {{buyer.MobileNo}} </mat-cell>
-                </ng-container>
+                  <mat-cell  *matCellDef="let buyer"> {{buyer.BuyerMobileNo}} </mat-cell>
+                </ng-container> 
                 <mat-header-row  *matHeaderRowDef="displayedColumns"></mat-header-row>
                 <mat-row  *matRowDef="let row; columns: displayedColumns;"></mat-row>
               </mat-table>
               <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
-            </div> -->
+            </div> 
             </form>
             </mat-card-content>
       </mat-card>

@@ -41,7 +41,7 @@
           <Property Name="BuyerCity" Type="int" Nullable="false" />
           <Property Name="BuyerAddress" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="BuyerPincode" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="BuyerMoileNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="BuyerMobileNo" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="BidAmount" Type="int" Nullable="false" />
           <Property Name="BuyersProductId" Type="int" />
         </EntityType>
@@ -122,7 +122,7 @@
           <Property Name="BuyerCity" Type="Int32" Nullable="false" />
           <Property Name="BuyerAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BuyerPincode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="BuyerMoileNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BuyerMobileNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BidAmount" Type="Int32" Nullable="false" />
           <Property Name="BuyersProductId" Type="Int32" />
         </EntityType>
@@ -206,7 +206,7 @@
                 <ScalarProperty Name="BuyerCity" ColumnName="BuyerCity" />
                 <ScalarProperty Name="BuyerAddress" ColumnName="BuyerAddress" />
                 <ScalarProperty Name="BuyerPincode" ColumnName="BuyerPincode" />
-                <ScalarProperty Name="BuyerMoileNo" ColumnName="BuyerMoileNo" />
+                <ScalarProperty Name="BuyerMobileNo" ColumnName="BuyerMobileNo" />
                 <ScalarProperty Name="BidAmount" ColumnName="BidAmount" />
                 <ScalarProperty Name="BuyersProductId" ColumnName="BuyersProductId" />
               </MappingFragment>

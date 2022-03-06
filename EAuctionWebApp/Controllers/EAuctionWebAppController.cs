@@ -116,7 +116,7 @@ namespace EAuctionWebApp.Controllers
                                   BuyerId = tblBuy.BuyerId,
                                   BuyerFirstName = tblBuy.BuyerFirstName,
                                   BuyerLastName = tblBuy.BuyerLastName,
-                                  BuyerMobileNo = tblBuy.BuyerMoileNo,
+                                  BuyerMobileNo = tblBuy.BuyerMobileNo,
                                   BuyerEmailId = tblBuy.BuyerEmailId,
                                   BuyerAddress = tblBuy.BuyerAddress,
                                   BidAmount = tblBuy.BidAmount,
@@ -136,7 +136,7 @@ namespace EAuctionWebApp.Controllers
 
         [HttpGet]
         [Route("GetProductDetailsById/{productId}")]
-        public IHttpActionResult GetProductById(string productId)
+        public IHttpActionResult GetProductById(int productId)
         {
             try
             {

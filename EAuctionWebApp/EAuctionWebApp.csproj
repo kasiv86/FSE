@@ -177,37 +177,37 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CityMaster.cs">
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CountryMaster.cs">
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\EAuctionModel.Context.cs">
+    <Compile Include="Models\EAuctionDBEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EAuctionModel.Context.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\EAuctionModel.cs">
+    <Compile Include="Models\EAuctionDBEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\EAuctionModel.Designer.cs">
+    <Compile Include="Models\EAuctionDBEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EAuctionModel.edmx</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\StateMaster.cs">
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tblBuyerMaster.cs">
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tblProductMaster.cs">
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tblSellerMaster.cs">
-      <DependentUpon>EAuctionModel.tt</DependentUpon>
+      <DependentUpon>EAuctionDBEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -299,15 +299,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\EAuctionModel.Context.tt">
+    <Content Include="Models\EAuctionDBEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EAuctionModel.edmx</DependentUpon>
-      <LastGenOutput>EAuctionModel.Context.cs</LastGenOutput>
+      <DependentUpon>EAuctionDBEntities.edmx</DependentUpon>
+      <LastGenOutput>EAuctionDBEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\EAuctionModel.tt">
+    <Content Include="Models\EAuctionDBEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EAuctionModel.edmx</DependentUpon>
-      <LastGenOutput>EAuctionModel.cs</LastGenOutput>
+      <DependentUpon>EAuctionDBEntities.edmx</DependentUpon>
+      <LastGenOutput>EAuctionDBEntities.cs</LastGenOutput>
     </Content>
     <Content Include="obj\Debug\EAuctionWebApp.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\EAuctionWebApp.dll" />
@@ -360,12 +360,12 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\EAuctionWebApp.dll.config" />
     <Content Include="bin\AngulerWebApp.dll.config" />
-    <EntityDeploy Include="Models\EAuctionModel.edmx">
+    <EntityDeploy Include="Models\EAuctionDBEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EAuctionModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>EAuctionDBEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\EAuctionModel.edmx.diagram">
-      <DependentUpon>EAuctionModel.edmx</DependentUpon>
+    <Content Include="Models\EAuctionDBEntities.edmx.diagram">
+      <DependentUpon>EAuctionDBEntities.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

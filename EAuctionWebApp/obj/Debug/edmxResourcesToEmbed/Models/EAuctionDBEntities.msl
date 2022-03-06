@@ -39,7 +39,7 @@
           <ScalarProperty Name="BuyerCity" ColumnName="BuyerCity" />
           <ScalarProperty Name="BuyerAddress" ColumnName="BuyerAddress" />
           <ScalarProperty Name="BuyerPincode" ColumnName="BuyerPincode" />
-          <ScalarProperty Name="BuyerMoileNo" ColumnName="BuyerMoileNo" />
+          <ScalarProperty Name="BuyerMobileNo" ColumnName="BuyerMobileNo" />
           <ScalarProperty Name="BidAmount" ColumnName="BidAmount" />
           <ScalarProperty Name="BuyersProductId" ColumnName="BuyersProductId" />
         </MappingFragment>

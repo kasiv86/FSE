@@ -23,7 +23,7 @@ export class EAuctionService {
   getSellerById(sellerId: string): Observable<Seller> {
     return this.http.get<Seller>(this.url + '/GetSellerDetailsById/' + sellerId);
   }
-  getProductById(productId: string): Observable<Product> {
+  getProductById(productId): Observable<Product> {
     return this.http.get<Product>(this.url + '/GetProductDetailsById/' + productId);
   }
   createSeller(seller: Seller): Observable<Seller> {

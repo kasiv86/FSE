@@ -36,7 +36,7 @@ export class BiddingareaComponent implements OnInit {
 
   ngOnInit() {
     this.eauctionForm = this.formbulider.group({
-      ProductId: [''],
+      ProductID: [''],
       ProductName: [''],
       ShortDescription: [''],
       DetailedDescription: [''],
@@ -57,8 +57,8 @@ export class BiddingareaComponent implements OnInit {
     });
   }
 
-  loadProduct(productId: string) {
-    this.eauctionService.getProductById(productId).subscribe(product => {
+  loadProduct(productId) {
+    this.eauctionService.getProductById(productId.value).subscribe(product => {
       this.eauctionForm.controls['ProductName'].setValue(product.ProductName);
       this.eauctionForm.controls['ShortDescription'].setValue(product.ShortDescription);
       this.eauctionForm.controls['DetailedDescription'].setValue(product.DetailedDescription);
